@@ -1,0 +1,12 @@
+[
+    {
+        "model" : "blog.Product1",
+        "pk" : 1,
+        "fields" : {
+            "title" : "Havchik",
+            "text" : "300 gr",
+            "cover" : "images/image1.png"            
+        }
+
+    }
+]

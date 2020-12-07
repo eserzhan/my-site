@@ -1,0 +1,22 @@
+{% extends 'blog/base_products.html' %}
+{% load static %}
+
+{% block content %} 
+    <div class="container" id="products">
+        <div class="row text-center">
+    
+            <h2> Меню </h2>    
+
+            {% for post in posts %}
+            <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 ">
+                <div class="bg-white rounded shadow-sm py-5 px-4 infoblocks">
+                    <img src="{{ post.cover.url }}" alt="" width="250" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0 text-uppercase">{{ post.title }}</h5>
+                    <span class="small text-muted">{{ post.text|linebreaksbr }}</span>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+{% endblock %}
